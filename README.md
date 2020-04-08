@@ -1,3 +1,9 @@
+i wrote a [Counter](https://github.com/vishnu-thiyagarajan/react-testing/blob/master/src/utils/useCounter.js) to increment and decrement.    
+to test using react hooks testing library use [test](https://github.com/vishnu-thiyagarajan/react-testing/blob/master/src/utils/useCounter.test.js)    
+to test using enzyme use [test](https://github.com/vishnu-thiyagarajan/react-testing/blob/master/src/App.test.js)     
+testing library tests based on data of state or variable.    
+enzyme tests based on dom nodes value.    
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
