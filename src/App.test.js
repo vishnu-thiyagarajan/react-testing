@@ -1,9 +1,14 @@
 import React from 'react';
-import { render } from '@testing-library/react';
 import App from './App';
+import Enzyme, { shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+Enzyme.configure({ adapter: new Adapter() })
+describe("increment", () => {
+  it("incremnets by 1 count", () => {
+      const wrapper = shallow(<App />);
+      wrapper.find('button').at(0).simulate('click');
+      const text = wrapper.find('p');
+      expect(text.text()).toBe('1');
+  })
+})
